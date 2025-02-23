@@ -10,20 +10,8 @@ public class AppException extends RuntimeException {
   private final String userMessage;
   private final HttpStatus httpStatus;
 
-  public AppException(ExceptionConstants exceptionConstants, String errorMessage) {
-    super(errorMessage);
-    this.userMessage = exceptionConstants.getUserMessage();
-    this.httpStatus = exceptionConstants.getHttpStatus();
-  }
-
   public AppException(String metadata, ExceptionConstants exceptionConstants) {
-    super(exceptionConstants.getUserMessage().concat(" "+metadata));
-    this.userMessage = exceptionConstants.getUserMessage();
-    this.httpStatus = exceptionConstants.getHttpStatus();
-  }
-
-  public AppException(ExceptionConstants exceptionConstants) {
-    super(exceptionConstants.getUserMessage());
+    super(exceptionConstants.getUserMessage().concat(" " + metadata));
     this.userMessage = exceptionConstants.getUserMessage();
     this.httpStatus = exceptionConstants.getHttpStatus();
   }

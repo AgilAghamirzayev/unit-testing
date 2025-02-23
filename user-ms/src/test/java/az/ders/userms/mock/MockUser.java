@@ -7,14 +7,15 @@ import java.util.List;
 
 public interface MockUser {
 
-  Long USER_1_ID = 1L;
-  Long USER_2_ID = 2L;
+  Long INVALID_ID = -1L;
+  Long USER_ID_1 = 1L;
+  Long USER_ID_2 = 2L;
 
   User USER_1 = User.of(null, "Ali", "ali@example.com", null, null);
   User USER_2 = User.of(null, "Vali", "vali@example.com", null, null);
 
-  UserResponse USER_RESPONSE_1 = UserResponse.of(USER_1_ID, "Ali", "ali@example.com");
-  UserResponse USER_RESPONSE_2 = UserResponse.of(USER_2_ID, "Vali", "vali@example.com");
+  UserResponse USER_RESPONSE_1 = UserResponse.of(USER_ID_1, "Ali", "ali@example.com");
+  UserResponse USER_RESPONSE_2 = UserResponse.of(USER_ID_2, "Vali", "vali@example.com");
 
   UserRequest USER_REQUEST_1 = UserRequest.of("Ali", "ali@example.com");
 
@@ -33,27 +34,6 @@ public interface MockUser {
         "name": "Vali",
         "email": "vali@example.com"
       }
-      """;
-
-  String USER_3_JSON = """ 
-       {
-         "name": "Aysu",
-         "email": "aysu@example.com"
-       }
-      """;
-
-  String USER_4_JSON = """ 
-       {
-         "name": "Lale",
-         "email": "lale@example.com"
-       }
-      """;
-
-  String USER_5_JSON = """ 
-       {
-         "name": "Adil",
-         "email": "adil@example.com"
-       }
       """;
 
 }

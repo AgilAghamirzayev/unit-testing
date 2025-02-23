@@ -1,10 +1,9 @@
-package az.ders.userms;
+package az.ders.userms.integration;
 
+import static az.ders.userms.mock.MockUser.INVALID_ID;
 import static az.ders.userms.mock.MockUser.USER_1_JSON;
 import static az.ders.userms.mock.MockUser.USER_2_JSON;
-import static az.ders.userms.mock.MockUser.USER_3_JSON;
-import static az.ders.userms.mock.MockUser.USER_4_JSON;
-import static az.ders.userms.mock.MockUser.USER_5_JSON;
+import static az.ders.userms.mock.MockUser.USER_ID_1;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -13,7 +12,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import az.ders.userms.entity.User;
+import az.ders.userms.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -32,6 +33,15 @@ class UserIntegrationTest {
 
   @Autowired
   private ObjectMapper objectMapper;
+
+  @Autowired
+  private UserRepository userRepository;
+
+
+  @BeforeEach
+  void setUp() {
+    userRepository.deleteAll();
+  }
 
   @Test
   void testGetAllUsers() throws Exception {
@@ -56,7 +66,7 @@ class UserIntegrationTest {
   void testGetUserById() throws Exception {
     String response = mockMvc.perform(post("/api/v1/users")
             .contentType(MediaType.APPLICATION_JSON)
-            .content(USER_3_JSON))
+            .content(USER_1_JSON))
         .andExpect(status().isCreated())
         .andReturn()
         .getResponse()
@@ -68,25 +78,36 @@ class UserIntegrationTest {
         .andExpect(status().isOk())
         .andExpect(content().contentType(MediaType.APPLICATION_JSON))
         .andExpect(jsonPath("$.id").value(createdUser.getId()))
-        .andExpect(jsonPath("$.name").value("Aysu"))
-        .andExpect(jsonPath("$.email").value("aysu@example.com"));
+        .andExpect(jsonPath("$.name").value("Ali"))
+        .andExpect(jsonPath("$.email").value("ali@example.com"));
+  }
+
+  @Test
+  void testGetUserByInvalidId() throws Exception {
+    mockMvc.perform(post("/api/v1/users")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(USER_1_JSON))
+        .andExpect(status().isCreated());
+
+    mockMvc.perform(get("/api/v1/users/" + INVALID_ID))
+        .andExpect(status().isNotFound());
   }
 
   @Test
   void testCreateUser() throws Exception {
     mockMvc.perform(post("/api/v1/users")
             .contentType(MediaType.APPLICATION_JSON)
-            .content(USER_4_JSON))
+            .content(USER_1_JSON))
         .andExpect(status().isCreated())
-        .andExpect(jsonPath("$.name").value("Lale"))
-        .andExpect(jsonPath("$.email").value("lale@example.com"));
+        .andExpect(jsonPath("$.name").value("Ali"))
+        .andExpect(jsonPath("$.email").value("ali@example.com"));
   }
 
   @Test
   void testDeleteUser() throws Exception {
     String response = mockMvc.perform(post("/api/v1/users")
             .contentType(MediaType.APPLICATION_JSON)
-            .content(USER_5_JSON))
+            .content(USER_1_JSON))
         .andExpect(status().isCreated())
         .andReturn()
         .getResponse()

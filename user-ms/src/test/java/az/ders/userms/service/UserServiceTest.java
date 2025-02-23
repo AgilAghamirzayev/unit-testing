@@ -1,7 +1,7 @@
 package az.ders.userms.service;
 
 import static az.ders.userms.mock.MockUser.USER_1;
-import static az.ders.userms.mock.MockUser.USER_1_ID;
+import static az.ders.userms.mock.MockUser.USER_ID_1;
 import static az.ders.userms.mock.MockUser.USER_LIST;
 import static az.ders.userms.mock.MockUser.USER_REQUEST_1;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -41,18 +41,18 @@ class UserServiceTest {
 
   @Test
   void testGetUserById_UserExists() {
-    when(userRepository.findById(USER_1_ID)).thenReturn(Optional.of(USER_1));
+    when(userRepository.findById(USER_ID_1)).thenReturn(Optional.of(USER_1));
 
-    UserResponse foundUser = userService.getUserById(USER_1_ID);
+    UserResponse foundUser = userService.getUserById(USER_ID_1);
     assertEquals("Ali", foundUser.getName());
   }
 
   @Test
   void testGetUserById_UserNotFound() {
-    when(userRepository.findById(USER_1_ID)).thenReturn(Optional.empty());
+    when(userRepository.findById(USER_ID_1)).thenReturn(Optional.empty());
 
     Exception exception =
-        assertThrows(AppException.class, () -> userService.getUserById(USER_1_ID));
+        assertThrows(AppException.class, () -> userService.getUserById(USER_ID_1));
     assertEquals("Not found by id: 1", exception.getMessage());
   }
 
@@ -66,9 +66,9 @@ class UserServiceTest {
 
   @Test
   void testDeleteUser() {
-    doNothing().when(userRepository).deleteById(USER_1_ID);
-    userService.deleteUser(USER_1_ID);
-    verify(userRepository, times(1)).deleteById(USER_1_ID);
+    doNothing().when(userRepository).deleteById(USER_ID_1);
+    userService.deleteUser(USER_ID_1);
+    verify(userRepository, times(1)).deleteById(USER_ID_1);
   }
 
 }

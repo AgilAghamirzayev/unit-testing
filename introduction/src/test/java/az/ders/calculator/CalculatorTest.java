@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -48,6 +49,11 @@ class CalculatorTest {
   @Test
   void testMultiplyWithZero() {
     assertEquals(0, calculator.multiply(10, 0), "Multiplication with zero should be zero");
+  }
+
+  @RepeatedTest(5)
+  void testMultiplyWithPositive() {
+    assertEquals(100, calculator.multiply(10, 10), "Multiplication with zero should be zero");
   }
 
 }

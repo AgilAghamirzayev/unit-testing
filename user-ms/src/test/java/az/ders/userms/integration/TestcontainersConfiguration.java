@@ -1,4 +1,4 @@
-package az.ders.userms;
+package az.ders.userms.integration;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
