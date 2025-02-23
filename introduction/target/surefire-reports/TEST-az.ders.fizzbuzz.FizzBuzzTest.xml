@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="az.ders.fizzbuzz.FizzBuzzTest" time="0.095" tests="169" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/test-classes:/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/classes:/Users/agamirzayevas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.0/junit-jupiter-api-5.12.0.jar:/Users/agamirzayevas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/agamirzayevas/.m2/repository/org/junit/platform/junit-platform-commons/1.12.0/junit-platform-commons-1.12.0.jar:/Users/agamirzayevas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/agamirzayevas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.0/junit-jupiter-params-5.12.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AZ"/>
+    <property name="sun.boot.library.path" value="/Users/agamirzayevas/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/surefire/surefirebooter-20250223183759368_3.jar /Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/surefire 2025-02-23T18-37-58_183-jvmRun1 surefire-20250223183759368_1tmp surefire_0-20250223183759368_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/test-classes:/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/classes:/Users/agamirzayevas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.0/junit-jupiter-api-5.12.0.jar:/Users/agamirzayevas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/agamirzayevas/.m2/repository/org/junit/platform/junit-platform-commons/1.12.0/junit-platform-commons-1.12.0.jar:/Users/agamirzayevas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/agamirzayevas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.0/junit-jupiter-params-5.12.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/agamirzayevas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Users/agamirzayevas/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction/target/surefire/surefirebooter-20250223183759368_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2+13-58"/>
+    <property name="user.name" value="agamirzayevas"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/agamirzayevas/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/th/8jt6g_4n5wncx2s1ntrksm440000gn/T/"/>
+    <property name="idea.version" value="2024.3.3"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="/Users/agamirzayevas/Desktop/Projects/Self/unit-testing/introduction"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/agamirzayevas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.2+13-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testForDivisibleByThree" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testForDivisibleByFive" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testForDivisibleByThreeAndFive" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testForNotDivisibleByThreeOrFive" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[1]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.002"/>
+  <testcase name="testSmallDataFile(int, String)[2]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testSmallDataFile(int, String)[3]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[4]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testSmallDataFile(int, String)[5]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testSmallDataFile(int, String)[6]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[7]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[8]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[9]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testSmallDataFile(int, String)[10]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[11]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testSmallDataFile(int, String)[12]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[13]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[14]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testSmallDataFile(int, String)[15]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[1]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[2]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[3]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[4]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[5]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[6]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[7]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[8]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[9]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[10]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[11]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[12]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[13]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[14]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[15]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[16]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[17]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[18]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[19]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[20]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[21]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[22]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[23]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[24]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[25]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[26]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[27]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[28]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[29]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[30]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[31]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[32]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[33]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[34]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[35]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[36]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[37]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[38]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[39]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[40]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[41]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[42]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[43]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[44]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testMediumDataFile(int, String)[45]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[46]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[47]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[48]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[49]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testMediumDataFile(int, String)[50]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[1]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[2]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[3]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[4]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[5]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[6]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[7]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[8]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[9]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[10]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[11]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[12]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[13]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[14]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[15]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[16]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[17]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[18]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[19]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[20]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[21]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[22]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[23]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[24]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[25]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[26]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[27]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[28]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[29]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[30]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[31]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[32]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[33]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[34]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[35]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[36]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[37]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[38]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[39]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[40]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[41]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[42]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[43]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[44]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[45]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[46]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[47]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[48]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[49]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[50]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[51]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[52]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[53]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[54]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[55]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[56]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[57]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[58]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[59]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[60]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[61]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[62]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[63]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[64]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[65]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[66]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[67]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[68]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[69]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[70]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[71]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[72]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[73]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[74]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[75]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[76]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[77]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[78]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[79]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[80]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[81]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[82]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[83]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[84]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[85]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[86]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[87]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[88]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[89]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[90]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[91]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[92]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.001"/>
+  <testcase name="testLargeDataFile(int, String)[93]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[94]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[95]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[96]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[97]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[98]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[99]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+  <testcase name="testLargeDataFile(int, String)[100]" classname="az.ders.fizzbuzz.FizzBuzzTest" time="0.0"/>
+</testsuite>
