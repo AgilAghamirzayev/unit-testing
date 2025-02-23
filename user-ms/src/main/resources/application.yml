@@ -7,12 +7,12 @@ spring:
     username: user
     password: secret
     driver-class-name: org.postgresql.Driver
-
   jpa:
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+    open-in-view: false
 
   liquibase:
     change-log: classpath:liquibase/changelog-master.yml
