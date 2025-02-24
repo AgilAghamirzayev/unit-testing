@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: ecommerce
@@ -16,3 +17,6 @@ spring:
 
   liquibase:
     change-log: classpath:liquibase/changelog-master.yml
+    enabled: false
+server:
+  port: 8888
